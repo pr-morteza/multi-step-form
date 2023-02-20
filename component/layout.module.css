@@ -1,0 +1,35 @@
+
+
+.MainBack{
+    background: url('../public/assets/images/bg-sidebar-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.p{
+ font-weight: 600;
+}
+
+.h4{
+    font-weight: 800;
+
+}
+
+.span{
+    font-weight: 300;
+}
+
+@media screen and (max-width:599px) {
+    .MainBack{
+        background: url('../public/assets/images/bg-sidebar-mobile.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .bottomBtn{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+}
