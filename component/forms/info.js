@@ -43,10 +43,10 @@ export default function Info() {
 
   useEffect(()=>{
     if(!name||!email||!phoneNum){
-      return setInfoVal(true)
+      return setInfoVal(false)
     }
  
-    (error1|| error2|| error3) ? setInfoVal(true) : setInfoVal(false)
+    (error1|| error2|| error3) ? setInfoVal(false) : setInfoVal(true)
   },[name, email, phoneNum])
   
   return (
