@@ -74,7 +74,7 @@ const prev=()=>{
               <Grid container justifyContent='space-between' padding={{sm:0, xs:2}} className='bg-white'>
                 {(com===1||com===2||com===3) && <Button type='submit' onClick={prev} variant="">go back</Button>}
                 <Button 
-                  disabled={com===0 && infoVal || com===1 && choosedPlans.length===0 || com===2 && add.length===0 } 
+                  disabled={com===0 && !infoVal || com===1 && choosedPlans.length===0 || com===2 && add.length===0 } 
                   type='submit' 
                   onClick={next} 
                   variant="contained"
